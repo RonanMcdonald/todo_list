@@ -1,0 +1,81 @@
+@import '/src/style/base';
+
+.SideNavigation_Container {
+  min-height: 100vh;
+
+  // Border
+  border-right: $border;
+}
+
+// Logo
+.Logo_Wrapper {
+  // Position
+  display: flex;
+  justify-content: center;
+
+  // Padding
+  padding: 8px 0;
+
+  // Border
+  border-bottom: $border;
+
+  // Logo img size
+  img {
+    height: 100%;
+  }
+}
+
+// Navigation
+ul {
+  // List style
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    margin: 5px;
+    border-radius: 5px;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+
+    padding: 12px 12px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: #8a78c550;
+    }
+  }
+}
+
+// Tooltip
+.tooltip {
+  position: relative;
+
+  // Text
+  .tooltiptext {
+    visibility: hidden;
+    width: 80px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 4px;
+
+    position: absolute;
+    left: 105%;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-weight: 500;
+  }
+
+  // On hover, make visable
+  &:hover .tooltiptext {
+    visibility: visible;
+  }
+}

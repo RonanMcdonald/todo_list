@@ -1,7 +1,22 @@
 [
   { 
-    "linkName": "exampleLink", 
-    "iconLocation": "exampleIcon", 
+    "linkName": "Name", 
+    "iconLocation": "./images/navigation/Vector-1.svg", 
+    "href": "exampleHref" 
+  },
+  { 
+    "linkName": "Account", 
+    "iconLocation": "./images/navigation/Vector-2.svg", 
+    "href": "exampleHref" 
+  },
+  { 
+    "linkName": "Friends", 
+    "iconLocation": "./images/navigation/Vector-3.svg", 
+    "href": "exampleHref" 
+  },
+  { 
+    "linkName": "Logout", 
+    "iconLocation": "./images/navigation/Vector.svg", 
     "href": "exampleHref" 
   }
 ]
